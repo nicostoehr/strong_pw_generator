@@ -13,8 +13,6 @@ def main() -> None:
     pw_num = BooleanVar(value=True)
     pw_sym = BooleanVar(value=True)
 
-
-
     # Functions
     def gen_pw_internal() -> None:
         pw = gen_pw(int(pw_length.get()), pw_cap.get(), pw_num.get(), pw_sym.get())
@@ -24,8 +22,6 @@ def main() -> None:
         e1.delete(0, "end")
         e1.insert(0, pw)
         e1.configure(state="readonly")
-
-
 
     # Widget Inits
     l1 = Label(mw, text="Password length:", font=font_main)
